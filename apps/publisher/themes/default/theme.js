@@ -154,7 +154,7 @@ var engine = caramel.engine('handlebars', (function() {
                     return '';
                 }
                 for (var key in fields) {
-                    if ((index % 3) == 0) {
+                    if ((index % columns) == 0) {
                         index = 0;
                         out += '</tr><tr>';
                     }
@@ -401,7 +401,7 @@ var engine = caramel.engine('handlebars', (function() {
                 var index = 0;
                 var out = '<tr>';
                 for (var key in fields) {
-                    if ((index % 3) == 0) {
+                    if ((index % columns) == 0) {
                         index = 0;
                         out += '</tr><tr>';
                     }
